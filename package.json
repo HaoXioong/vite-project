@@ -21,9 +21,11 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,css,less}": [
+    "*.{js,ts}": [
       "npm run eslint",
-      "npm run prettier",
+      "npm run prettier"
+    ],
+    "*.{css,less}": [
       "npm run lint:style"
     ]
   },
